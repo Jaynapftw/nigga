@@ -29,7 +29,7 @@
       max-width: 500px;
     }
     .btn {
-      margin-top: 25px;
+      margin-top: 20px;
       padding: 16px 32px;
       font-size: 20px;
       border: none;
@@ -45,10 +45,15 @@
       background: #2f58c0;
     }
     .btn2 {
-      background: #1ea45a;
-      margin-top: 15px;
+      background: #845ef7; /* second form (purple-ish) */
     }
     .btn2:hover {
+      background: #7048e8;
+    }
+    .btn3 {
+      background: #1ea45a; /* AI / GPT */
+    }
+    .btn3:hover {
       background: #168249;
     }
     footer {
@@ -62,15 +67,24 @@
 <body>
 
 <h1>Start Exam Tools</h1>
-<p>First open the Google Form to access the exam.  
-Then open the AI page for assistance, if allowed.</p>
+<p>Open the exam forms and the AI page from here.</p>
 
-<!-- Change your links here -->
-<button class="btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScDk-uIzqwjawJq0xGRQde_glHrbFxfAoMXt3ms-P23LaD5tg/viewform?usp=header'">
-  Open Google Form
+<!-- Google Form 1 -->
+<button class="btn"
+  onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScDk-uIzqwjawJq0xGRQde_glHrbFxfAoMXt3ms-P23LaD5tg/viewform?usp=header'">
+  Open Google Form 1
 </button>
-<button class="btn btn2" onclick="window.open('https://chatgpt.com/', '_blank')">
-  Open AI / Search Page
+
+<!-- Google Form 2 – replace the URL below with your second form link -->
+<button class="btn btn2"
+  onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScDk-uIzqwjawJq0xGRQde_glHrbFxfAoMXt3ms-P23LaD5tg/viewform?usp=header'">
+  Open Google Form 2
+</button>
+
+<!-- ChatGPT -->
+<button class="btn btn3"
+  onclick="window.open('https://chatgpt.com/', '_blank')">
+  Open ChatGPT
 </button>
 
 <footer>© 2025 All rights reserved</footer>
